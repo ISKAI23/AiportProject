@@ -19,5 +19,10 @@ public class AirportService {
         return result;
     }
     
+    public List<Airport> findByCity(String city){
+        List<Airport> result = airportRepository.findByCityIgnoreCase(city);
+        return result;
+    }
+        
     
 }
